@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontEndController;
 
-Route::view('/{any}', 'pages.home')
+Route::get('/{any}', [FrontEndController::class, 'home'])
     ->where('any', '.*');

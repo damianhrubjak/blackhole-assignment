@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-optical-sizing: auto;
+}
+
+@layer components {
+    .page-wrapper {
+        @apply max-w-screen-2xl mx-auto;
+    }
+
+    .filter-heading {
+        @apply text-lg font-semibold text-[#696969];
+    }
+
+    .filter-select-control {
+        @apply mt-3 rounded-full border border-pallette-gray-200 px-3;
+
+        select {
+            @apply bg-transparent py-2 text-sm font-medium text-pallette-gray-500 w-full;
+        }
+    }
+}

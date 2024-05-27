@@ -4,11 +4,14 @@
 
 <body>
 
-    @include('includes.header')
+    <div class="page-wrapper relative flex gap-10">
+        <main class="w-[calc(100%-29.5rem)]">
+            @include('includes.header')
 
-    <main>
-        @yield('main')
-    </main>
+            @yield('main')
+        </main>
+        @include('includes.map')
+    </div>
 
     <section data-scripts>
         @yield('scripts')
