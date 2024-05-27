@@ -14,13 +14,13 @@
             <div class="w-full">
                 <div class="mb-10 flex flex-row flex-wrap items-baseline gap-4">
 
-                    <h3 class="text-lg font-semibold">
+                    <h3 class="text-lg font-bold">
                         Showing {{ count($real_estates) }} search results
                     </h3>
 
                     <div class="ml-auto mr-0 rounded-full border border-pallette-gray-200 px-4 py-2">
                         <span class="font-medium text-pallette-gray-700">Sort by:</span>
-                        <select name="" id="" class="bg-transparent font-semibold">
+                        <select name="" id="" class="bg-transparent font-bold">
                             <option value="newest">Newest</option>
                             <option value="oldest">Oldest</option>
                             <option value="most_expensive">Most expensive</option>
@@ -41,6 +41,12 @@
             id="filter-button">
             <i class="fa-solid fa-filter pointer-events-none"></i>
         </button>
+
+        <button class="fixed bottom-4 right-4 z-40 h-12 w-12 rounded-lg bg-pallette-blue-500 text-white xl:hidden"
+            id="map-button">
+            <i class="fa-solid fa-map pointer-events-none"></i>
+        </button>
+
     </section>
 
 @endsection

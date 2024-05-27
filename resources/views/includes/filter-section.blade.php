@@ -5,21 +5,21 @@
     $fmtArea->setAttribute(NumberFormatter::MAX_FRACTION_DIGITS, 0);
 @endphp
 <aside id="filter-section"
-    class="fixed left-0 top-0 max-h-screen w-full max-w-xs -translate-x-full overflow-auto bg-white p-4 pb-20 transition duration-300 lg:relative lg:max-h-full lg:max-w-full lg:translate-x-0 lg:p-0 lg:pb-0">
+    class="fixed left-0 top-0 max-h-screen w-full max-w-xs -translate-x-full overflow-auto border-r-2 border-pallette-gray-200 bg-white px-4 pb-20 pt-4 transition duration-300 lg:relative lg:max-h-full lg:max-w-full lg:translate-x-0 lg:border-none lg:p-0 lg:pb-0">
     <form>
         <div class="flex items-baseline justify-between">
-            <h2 class="text-xl font-semibold">Filters</h2>
+            <h2 class="text-xl font-bold">Filters</h2>
 
             <button type="reset" class="flex items-center">
                 <p class="border-b border-gray-300 leading-none text-pallette-gray-500">
                     Reset filters
                 </p>
                 <span
-                    class="ml-3 flex h-5 w-5 items-center justify-center rounded-full bg-gray-200 align-middle text-xs font-semibold text-pallette-blue-500">5</span>
+                    class="ml-3 flex h-5 w-5 items-center justify-center rounded-full bg-gray-200 align-middle text-xs font-bold text-pallette-blue-500">5</span>
             </button>
         </div>
 
-        <article class="mt-4">
+        <article class="mt-6">
             <h4 class="filter-heading">Property Type</h4>
 
             <div class="mt-3 grid grid-cols-1 gap-2">
@@ -30,7 +30,7 @@
                 @include('includes.checkbox', ['name' => 'parking', 'label' => 'Parking'])
             </div>
         </article>
-        <article class="mt-4">
+        <article class="mt-6">
             <h4 class="filter-heading">Style of Home</h4>
 
             <div class="mt-3 grid grid-cols-1 gap-2">
@@ -41,7 +41,7 @@
                 @include('includes.checkbox', ['name' => 'spanish', 'label' => 'Spanish'])
             </div>
         </article>
-        <article class="mt-4 grid grid-cols-2 gap-4">
+        <article class="mt-6 grid grid-cols-2 gap-4">
             <div class="w-full">
                 <label class="filter-heading" for="min-price-select">Min. price</label>
                 <fieldset class="filter-select-control">
@@ -63,7 +63,7 @@
                 </fieldset>
             </div>
         </article>
-        <article class="mt-4 grid grid-cols-2 gap-4">
+        <article class="mt-6 grid grid-cols-2 gap-4">
             <div class="w-full">
                 <label class="filter-heading" for="bedroom-select">Bedroom</label>
                 <fieldset class="filter-select-control">
@@ -85,7 +85,7 @@
                 </fieldset>
             </div>
         </article>
-        <article class="mt-4 grid grid-cols-2 gap-4">
+        <article class="mt-6 grid grid-cols-2 gap-4">
             <div class="w-full">
                 <label class="filter-heading" for="area-min-select">Size (Min)</label>
                 <fieldset class="filter-select-control">
@@ -107,7 +107,7 @@
                 </fieldset>
             </div>
         </article>
-        <article class="mt-4">
+        <article class="mt-6">
             <h4 class="filter-heading">Accessibility Features</h4>
 
             <div class="mt-3 grid grid-cols-1 gap-2">

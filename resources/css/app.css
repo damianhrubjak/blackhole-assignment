@@ -12,7 +12,7 @@
     }
 
     .filter-heading {
-        @apply text-lg font-semibold text-[#696969];
+        @apply text-lg font-bold text-[#696969];
     }
 
     .filter-select-control {
