@@ -4,7 +4,8 @@
     $fmtArea = new NumberFormatter('sk_SK', NumberFormatter::DECIMAL);
     $fmtArea->setAttribute(NumberFormatter::MAX_FRACTION_DIGITS, 0);
 @endphp
-<aside class="w-full">
+<aside id="filter-section"
+    class="fixed left-0 top-0 max-h-screen w-full max-w-xs -translate-x-full overflow-auto bg-white p-4 pb-20 transition duration-300 lg:relative lg:max-h-full lg:max-w-full lg:translate-x-0 lg:p-0 lg:pb-0">
     <form>
         <div class="flex items-baseline justify-between">
             <h2 class="text-xl font-semibold">Filters</h2>

@@ -3,7 +3,7 @@
     $fmtArea = new NumberFormatter('sk_SK', NumberFormatter::DECIMAL);
 @endphp
 <article
-    class="rounded-xl border border-pallette-gray-200 p-2 shadow-transparent transition duration-300 hover:border-transparent hover:shadow-xl">
+    class="mx-auto w-full max-w-sm rounded-xl border border-pallette-gray-200 p-2 shadow-transparent transition duration-300 hover:border-transparent hover:shadow-xl sm:max-w-full">
     <img src="{{ $real_estate['image'] }}" alt="" class="h-64 w-full rounded-lg object-cover">
     <div class="p-4">
         <h3 class="text-xl font-semibold">{{ $fmt->formatCurrency($real_estate['price'], 'EUR') }}</h3>
